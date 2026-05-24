@@ -1,0 +1,37 @@
+$ python routing_agent.py
+
+Prompt: Tell me about the history of Rome, Texas
+0.3857057189769208
+0.16502615283380817
+0.002655916609837906
+[Router] Best agent: texas agent (score=0.386)
+Response:
+Rome, Texas is a small unincorporated community located in Fannin County. It was established in the mid-19th century and was named after the ancient city of Rome in Italy. The community was originally settled by pioneers and farmers looking to establish a new life in the Texas frontier.
+
+Rome, Texas has a rich history tied to the development of the region, including the growth of agriculture and the establishment of local businesses. Over the years, Rome has remained a small, close-knit community with a focus on preserving its historical roots.
+
+Today, Rome, Texas is a quiet rural community with a handful of residents and a few local businesses. It serves as a reminder of the early days of settlement in Texas and the perseverance of those who helped shape the region into what it is today.
+
+Prompt: Tell me about the history of Rome, Italy
+0.1436693949884037
+0.28801917884997263
+0.03210713643979547
+[Router] Best agent: europe agent (score=0.288)
+Response:
+Rome, Italy, has a rich and extensive history that dates back over 2,800 years. It was founded in the 8th century BC and grew to become one of the most powerful and influential civilizations in the ancient world. Rome was initially ruled by kings, but in 509 BC, the Roman Republic was established, marking the beginning of a new form of government based on a system of checks and balances.
+
+The Roman Republic expanded its territory through a series of military conquests, eventually controlling the entire Italian peninsula and parts of North Africa, Spain, and Greece. Rome's military prowess, engineering achievements, and legal system played a significant role in shaping Western civilization.
+
+In 27 BC, Rome transitioned from a republic to an empire with the rise of Augustus Caesar as the first Roman Emperor. The Roman Empire reached its peak during the 2nd century AD under the rule of Emperor Trajan, encompassing a vast territory that stretched from Britain to Mesopotamia.
+
+However, the empire faced internal strife, economic challenges, and external invasions that led to its decline. In 476 AD, the last Roman Emperor in the West was deposed, marking the end of the Western Roman Empire. The Eastern Roman Empire, also known as the Byzantine Empire, continued to exist for another thousand years until the fall of Constantinople in 1453.
+
+Rome's legacy can be seen in its architecture, art, literature, language, and legal system, which have had a lasting impact on European and world history. Today, Rome is a vibrant city that attracts millions of visitors each year who come to explore its ancient ruins, museums, and cultural heritage.
+
+Prompt: One story takes 2 days, and there are 20 stories
+0.05931873457402774
+0.08287505016499197
+0.13010010933460542
+[Router] Best agent: math agent (score=0.130)
+Response:
+It will take 40 days to complete all 20 stories.

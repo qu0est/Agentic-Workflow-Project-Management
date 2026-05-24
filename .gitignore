@@ -1,0 +1,23 @@
+# Environment / secrets
+.env
+.env.example
+tests/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# RAG output CSV files
+*.csv
+
+# Claude Code internal files
+.claude/
+
+# Duplicate / stray files not part of submission
+phase_1/base_agents.py
+phase_2/workflow_agents/agentic_workflow.py
+
+# Misc
+.DS_Store
+*.log

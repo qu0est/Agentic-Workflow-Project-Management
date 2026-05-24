@@ -1,0 +1,6 @@
+$ python direct_prompt_agent.py
+
+Prompt: What is the Capital of France?
+Response: The capital of France is Paris.
+
+Knowledge source: The DirectPromptAgent uses only the general knowledge embedded in the GPT-3.5-turbo model during its training. No system prompt, retrieval, or external context is provided — the answer comes entirely from the model's pre-trained world knowledge.

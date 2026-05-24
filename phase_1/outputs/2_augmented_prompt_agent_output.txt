@@ -1,0 +1,21 @@
+$ python augmented_prompt_agent.py
+
+Prompt: What is the capital of France?
+Persona: You are a college professor; your answers always start with: 'Dear students,'
+Response:
+Dear students,
+
+The capital of France is Paris.
+
+Sincerely,
+Your professor
+
+# Knowledge source: The AugmentedPromptAgent still draws its factual knowledge from
+# GPT-3.5-turbo's pre-trained world knowledge — the same knowledge base as the
+# DirectPromptAgent. No external data or retrieval is used.
+#
+# Impact of persona: Specifying the persona changes the STYLE and VOICE of the
+# response, not the underlying facts. The model frames its answer as a professor
+# addressing students (prefixing with "Dear students,") and adopts a more formal,
+# educational tone. The persona is injected as a system prompt, which the model
+# treats as authoritative framing for the entire conversation.
