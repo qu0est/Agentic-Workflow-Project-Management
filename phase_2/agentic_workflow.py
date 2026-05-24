@@ -212,6 +212,14 @@ def development_engineer_support_function(query):
     Generate and evaluate engineering tasks.
     Enriches the query with user stories and features so tasks directly
     reference the Email Router stories and capabilities defined earlier.
+
+    NOTE: We pass enriched_query directly to evaluate() instead of pre-calling
+    respond() and passing that result. EvaluationAgent.evaluate() re-calls the
+    worker agent with whatever argument it receives as the "prompt". If we pass
+    the initial_response (ET1-ET9) instead of the original query, the worker
+    treats the existing tasks as a prompt and only generates *additional* tasks
+    (ET10-ET12), so final_response misses ET1-ET9. Passing the enriched_query
+    lets the worker generate the complete task list in one shot.
     """
     context_parts = []
     if workflow_context["user_stories"]:
@@ -227,8 +235,9 @@ def development_engineer_support_function(query):
         f"{query}\n\n" + "\n\n".join(context_parts)
         if context_parts else query
     )
-    initial_response = development_engineer_knowledge_agent.respond(enriched_query)
-    evaluation_result = development_engineer_evaluation_agent.evaluate(initial_response)
+    # Pass enriched_query directly so the worker generates all tasks in one shot
+    # and final_response captures the complete engineering task breakdown.
+    evaluation_result = development_engineer_evaluation_agent.evaluate(enriched_query)
     return evaluation_result["final_response"]
 
 
